@@ -16,6 +16,7 @@ export class MyApp {
   rootPage: any = HomePage;
 
   pages: Array<{ title: string, component: any }>;
+  currentUser: any;
 
   constructor(
     public platform: Platform,
@@ -48,6 +49,7 @@ export class MyApp {
 
     this.nav.setRoot(page.component);
   }
+
   loginPopUp() {
     console.log('popup');
     let confirm = this.alertCtrl.create({
