@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 import { CooperProvider } from '../cooper/cooper';
 
 @Injectable()
-export class ProvidersProvider {
+export class PersonProvider {
   public gender: string;
   public age: number;
   public assessmentMessage: string;

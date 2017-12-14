@@ -7,7 +7,7 @@ import { HomePage } from '../pages/home/home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ProvidersProvider } from '../providers/person/person';
+import { PersonProvider } from '../providers/person/person';
 import { CooperProvider } from '../providers/cooper/cooper';
 
 @NgModule({
@@ -28,8 +28,8 @@ import { CooperProvider } from '../providers/cooper/cooper';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ProvidersProvider,
-    CooperProvider
+    CooperProvider,
+    PersonProvider
   ]
 })
 export class AppModule {}

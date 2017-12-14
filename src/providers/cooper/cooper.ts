@@ -82,8 +82,8 @@ export class CooperProvider {
         ratingIndex = index;
       } else {
         let [min, max] = dRange.split('-');
-        min = parseInt(min[0], 10);
-        max = parseInt(max[1], 10);
+        min = parseInt(min, 10);
+        max = parseInt(max, 10);
 
         if (distance >= min && distance <= max) {
           ratingIndex = index;
