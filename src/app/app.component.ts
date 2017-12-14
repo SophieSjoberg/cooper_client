@@ -26,7 +26,7 @@ export class MyApp {
     private alertCtrl: AlertController
   ) {
     this._tokenService.init({
-      apiBase: 'https://ss-cooper-api.herokuapp.com/api/v1/auth'
+      apiBase: 'https://ss-cooper-api.herokuapp.com/api/v1'
     });
 
     this.initializeApp();
