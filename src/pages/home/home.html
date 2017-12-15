@@ -40,5 +40,6 @@
     </ion-card-header>
     <ion-card-content>
       Gender: {{person?.gender}}, Age: {{person?.age}} <br/> Result: {{person?.assessmentMessage}}
+      <button block ion-button (click)="saveResults()">Save Results</button>
     </ion-card-content>
   </ion-card>

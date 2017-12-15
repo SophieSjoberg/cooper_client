@@ -15,8 +15,13 @@ export class ResultsPage {
   ) {}
 
   ionViewDidLoad() {
+    console.log('ionViewDidLoad ResultsPage');
     this.performanceData
       .getResults()
       .subscribe(data => (this.results = data.entries));
+  }
+
+  closeModal() {
+    this.navCtrl.pop();
   }
 }

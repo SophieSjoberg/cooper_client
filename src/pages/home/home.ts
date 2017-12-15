@@ -31,6 +31,12 @@ export class HomePage {
     .subscribe(data => console.log(data));
 
   }
+  
+  saveResults() {
+     this.performanceData
+       .saveData({ performance_data: { data: { message: this.person.assessmentMessage } } })
+       .subscribe(data => console.log(data));
+  }
 
   showResults() {
     this.modalCtrl.create(ResultsPage).present();
